@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logocop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Audio Coppel"
+            android:textColor="#001E82"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Encuentra aquí la gran variedad de música que Coppel selecciona para ti."
+        android:textColor="#3F51B5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_1" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Lo Logré - Codigo FN" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_1" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_1" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_2" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Shiny - EASYKID" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_2" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_2" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_3" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="No hay novedad - Los cadetes de linares" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_3" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_3" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_4" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Cancion 4 - Artistas Desconocidos" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_4" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_4" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_5" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Cancion 5 - Artistas Desconocidos" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_5" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_5" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_6" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Cancion 6 - Artistas Desconocidos" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_6" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_6" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+                <ImageButton android:id="@+id/btn_play_7" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/play" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView android:id="@+id/txt_cancion_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:text="Cancion 7 - Artistas Desconocidos" android:textStyle="bold" android:textColor="#333333"/>
+                <ImageButton android:id="@+id/btn_share_7" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/share" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton android:id="@+id/btn_blue_7" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/blue" android:scaleType="fitCenter" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
