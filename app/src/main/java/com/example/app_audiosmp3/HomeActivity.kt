@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class HomeActivity : AppCompatActivity() {
 
@@ -25,8 +26,6 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
 
         // Canción 1
         findViewById<ImageButton>(R.id.btn_play_1).setOnClickListener {
@@ -48,6 +47,20 @@ class HomeActivity : AppCompatActivity() {
         findViewById<ImageButton>(R.id.btn_play_5).setOnClickListener { reproducirMusica(R.raw.cancion_5, "Reproduciendo Canción 5") }
         findViewById<ImageButton>(R.id.btn_play_6).setOnClickListener { reproducirMusica(R.raw.cancion_6, "Reproduciendo Canción 6") }
         findViewById<ImageButton>(R.id.btn_play_7).setOnClickListener { reproducirMusica(R.raw.cancion_7, "Reproduciendo Canción 7") }
+
+
+        // Configurar TODOS los botones de compartir
+        val botonesCompartir = listOf(
+            R.id.btn_share_1, R.id.btn_share_2, R.id.btn_share_3,
+            R.id.btn_share_4, R.id.btn_share_5, R.id.btn_share_6, R.id.btn_share_7
+        )
+
+        botonesCompartir.forEach { id ->
+            findViewById<ImageButton>(id).setOnClickListener {
+                val intent = Intent(this, ShareActivity::class.java)
+                startActivity(intent)
+            }
+        }
 
     }
 
